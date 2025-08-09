@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">Age Calculator</p>
+      <form action="">
+        <label for="calendar">Enter your birth date:</label>
+        <div class="form-group">
+          <input type="text" id="calendar" placeholder="YYYY-MM-DD" />
+          <img src="calendar (1).png" alt="" />
+        </div>
+        <button type="button" id="calculate">Calculate</button>
+      </form>
+      <div class="calendar hidden">
+        <div class="calendar-header">
+          <button id="prev-month">&lt;</button>
+          <span id="current-month">January 2023</span>
+          <button id="next-month">&gt;</button>
+        </div>
+        <div class="calendar-grid">
+          <div class="day">Sun</div>
+          <div class="day">Mon</div>
+          <div class="day">Tue</div>
+          <div class="day">Wed</div>
+          <div class="day">Thu</div>
+          <div class="day">Fri</div>
+          <div class="day">Sat</div>
+        </div>
+        <div class="calendar-date">
+          <!-- Dates will be dynamically generated here -->
+
+        </div>
+      </div>
+      <div class="result">
+        <p id="age"></p>
+        <p id="error" class="error"></p>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
